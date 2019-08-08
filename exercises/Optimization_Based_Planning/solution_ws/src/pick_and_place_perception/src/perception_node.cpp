@@ -142,7 +142,7 @@ public:
     voxel_filter.setLeafSize(float(voxel_leaf_size), float(voxel_leaf_size), float(voxel_leaf_size));
     voxel_filter.filter(*cloud_voxel_filtered);
 
-    ROS_INFO_STREAM("Original cloud  had " << cloud_voxel_filtered->size() << " points");
+    ROS_INFO_STREAM("Original cloud  had " << cloud_ptr->size() << " points");
     ROS_INFO_STREAM("Downsampled cloud  with " << cloud_voxel_filtered->size() << " points");
 
     /* ========================================
